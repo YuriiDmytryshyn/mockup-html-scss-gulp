@@ -1,0 +1,6 @@
+@mixin flexbox($df, $js: flex-start, $ai: stretch, $fd: row) {
+    display: $df;
+    justify-content: $js;
+    align-items: $ai;
+    flex-direction: $fd;
+}

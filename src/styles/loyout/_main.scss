@@ -1,0 +1,852 @@
+.conteiner {
+    width: 940px;
+    margin: 0px auto;
+    @include flexbox(flex, center, center, column);
+}
+
+.section1 {
+    width: 100%;
+    &__title {
+        @include flexbox(flex, center, center, column);
+        margin: 90px auto 35px auto;
+        font-family: $font-montserrat;
+        font-style: $normal-style;
+        font-weight: $bold-weight;
+        font-size: 26px;
+        line-height: 32px;
+        color: $black-color;
+    }
+    &__content {
+        @include flexbox(flex);
+        &--left {
+            @include flexbox(flex, column);
+            width: 300px;
+            height: 400px;
+            position: relative;
+            margin-right: 20px;
+            &img {
+                width: 300px;
+                height: 400px;
+            }
+            & .position {
+                position: absolute;
+            }
+            & span {
+                width: 70px;
+                height: 20px;
+                background: $button-color;
+                border-radius: 40px;
+                font-family: $font-montserrat;
+                font-style: $normal-style;
+                font-weight: $normal-weight;
+                font-size: 10px;
+                line-height: 12px;
+                @include flexbox(flex, center, center);
+                letter-spacing: 2px;
+                color: $white-color;
+                margin: 225px 0px 0px 40px;
+            }
+            & h3 {
+                font-family: $font-montserrat;
+                font-style: $normal-style;
+                font-weight: $bold-weight;
+                font-size: 24px;
+                line-height: 26px;
+                @include flexbox(flex, flex-start, flex-end);
+                color: #ffffff;
+                margin: 255px 25px 0px 25px;
+            }
+            & p {
+                font-family: $font-roboto;
+                font-style: $normal-style;
+                font-weight: $light-weight;
+                font-size: 14px;
+                line-height: 14px;
+                @include flexbox(flex, flex-start, flex-end);
+                color: $xz-color;
+                margin: 325px 25px 0px 25px;
+            }
+        }
+        &--center {
+            @include flexbox(flex, column);
+            width: 300px;
+            height: 400px;
+            position: relative;
+            margin-right: 20px;
+            &img {
+                width: 300px;
+                height: 400px;
+            }
+            & .position {
+                position: absolute;
+            }
+            & span {
+                width: 70px;
+                height: 20px;
+                background: $button-color;
+                border-radius: 40px;
+                font-family: $font-montserrat;
+                font-style: $normal-style;
+                font-weight: $normal-weight;
+                font-size: 10px;
+                line-height: 12px;
+                @include flexbox(flex, center, center);
+                letter-spacing: 2px;
+                color: $white-color;
+                margin: 255px 0px 0px 40px;
+            }
+            & h3 {
+                font-family: $font-montserrat;
+                font-style: $normal-style;
+                font-weight: $bold-weight;
+                font-size: 24px;
+                line-height: 26px;
+                @include flexbox(flex, flex-start, flex-end);
+                color: #ffffff;
+                margin: 285px 25px 0px 25px;
+            }
+            & p {
+                font-family: $font-roboto;
+                font-style: $normal-style;
+                font-weight: $light-weight;
+                font-size: 14px;
+                line-height: 14px;
+                @include flexbox(flex, flex-start, flex-end);
+                color: $xz-color;
+                margin: 325px 25px 0px 25px;
+            }
+        }
+        &--right {
+            @include flexbox(flex, column);
+            width: 300px;
+            height: 400px;
+            position: relative;
+            &img {
+                width: 300px;
+                height: 400px;
+            }
+            & .position {
+                position: absolute;
+            }
+            & span {
+                width: 70px;
+                height: 20px;
+                background: $button-color;
+                border-radius: 40px;
+                font-family: $font-montserrat;
+                font-style: $normal-style;
+                font-weight: $normal-weight;
+                font-size: 10px;
+                line-height: 12px;
+                @include flexbox(flex, center, center);
+                letter-spacing: 2px;
+                color: $white-color;
+                margin: 225px 0px 0px 40px;
+            }
+            & h3 {
+                font-family: $font-montserrat;
+                font-style: $normal-style;
+                font-weight: $bold-weight;
+                font-size: 24px;
+                line-height: 26px;
+                @include flexbox(flex, flex-start, flex-end);
+                color: #ffffff;
+                margin: 255px 25px 0px 25px;
+            }
+            & p {
+                font-family: $font-roboto;
+                font-style: $normal-style;
+                font-weight: $light-weight;
+                font-size: 14px;
+                line-height: 14px;
+                @include flexbox(flex, flex-start, flex-end);
+                color: $xz-color;
+                margin: 325px 25px 0px 25px;
+            }
+        }
+    }
+}
+
+.section2 {
+    @extend .section1;
+    &__title {
+        @extend .section1__title;
+    }
+    &__partner {
+        @include flexbox(flex, space-around);
+        &--partner1 {
+            width: 221px;
+            height: 224px;
+            @include flexbox(flex, center, center, column);
+            & img {
+                width: 120px;
+                height: 120px;
+            }
+            & h3 {
+                font-family: $font-montserrat;
+                font-style: $normal-style;
+                font-weight: $bold-weight;
+                font-size: 14px;
+                line-height: 17px;
+                text-align: center;
+                color: $black-color;
+                margin-top: 17px;
+            }
+            & p {
+                font-family: $font-roboto;
+                font-style: $normal-style;
+                font-weight: $light-weight;
+                font-size: 14px;
+                line-height: 14px;
+                text-align: center;
+                color: $xz-xz-color;
+                margin-top: 12px;
+            }
+        }
+        &--partner2 {
+            @extend .section2__partner--partner1;
+            & img {
+                width: 120px;
+                height: 120px;
+            }
+            & h3 {
+                font-family: $font-montserrat;
+                font-style: $normal-style;
+                font-weight: $bold-weight;
+                font-size: 14px;
+                line-height: 17px;
+                text-align: center;
+                color: $black-color;
+                margin-top: 17px;
+            }
+            & p {
+                font-family: $font-roboto;
+                font-style: $normal-style;
+                font-weight: $light-weight;
+                font-size: 14px;
+                line-height: 14px;
+                text-align: center;
+                color: $xz-xz-color;
+                margin-top: 12px;
+            }
+        }
+        &--partner3 {
+            @extend .section2__partner--partner1;
+            & img {
+                width: 120px;
+                height: 120px;
+            }
+            & h3 {
+                font-family: $font-montserrat;
+                font-style: $normal-style;
+                font-weight: $bold-weight;
+                font-size: 14px;
+                line-height: 17px;
+                text-align: center;
+                color: $black-color;
+                margin-top: 17px;
+            }
+            & p {
+                font-family: $font-roboto;
+                font-style: $normal-style;
+                font-weight: $light-weight;
+                font-size: 14px;
+                line-height: 14px;
+                text-align: center;
+                color: $xz-xz-color;
+                margin-top: 12px;
+            }
+        }
+        &--partner4 {
+            @extend .section2__partner--partner1;
+            & img {
+                width: 120px;
+                height: 120px;
+            }
+            & h3 {
+                font-family: $font-montserrat;
+                font-style: $normal-style;
+                font-weight: $bold-weight;
+                font-size: 14px;
+                line-height: 17px;
+                text-align: center;
+                color: $black-color;
+                margin-top: 17px;
+            }
+            & p {
+                font-family: $font-roboto;
+                font-style: $normal-style;
+                font-weight: $light-weight;
+                font-size: 14px;
+                line-height: 14px;
+                text-align: center;
+                color: $xz-xz-color;
+                margin-top: 12px;
+            }
+        }
+    }
+    &__see-all {
+        @include flexbox(flex, center);
+        &--partners {
+            font-family: $font-montserrat;
+            font-style: $normal-style;
+            font-weight: $bold-weight;
+            font-size: 14px;
+            line-height: 17px;
+            color: $button-color;
+            width: 180px;
+            height: 40px;
+            background: $white-color;
+            border: 2px solid $button-color;
+            border-radius: 40px;
+            margin-top: 48px;
+            outline: none;
+            cursor: pointer;
+        }
+    }
+}
+
+.section3 {
+    @extend .section1;
+    &__title {
+        @extend .section1__title;
+    }
+    &__image {
+        display: flex;
+        flex-wrap: wrap;
+        &--sports {
+            width: 300px;
+            height: 310px;
+            position: relative;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            @include flexbox(flex, center, center);
+            & span {
+                font-family: $font-montserrat;
+                font-style: $normal-style;
+                font-weight: $bold-weight;
+                font-size: 22px;
+                line-height: 27px;
+                text-align: center;
+                color: $white-color;
+                position: absolute;
+            }
+        }
+        &--wellness {
+            width: 300px;
+            height: 310px;
+            position: relative;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            @include flexbox(flex, center, center);
+            & span {
+                font-family: $font-montserrat;
+                font-style: $normal-style;
+                font-weight: $bold-weight;
+                font-size: 22px;
+                line-height: 27px;
+                text-align: center;
+                color: $white-color;
+                position: absolute;
+            }
+        }
+        &--extreme {
+            width: 300px;
+            height: 310px;
+            position: relative;
+            margin-bottom: 20px;
+            @include flexbox(flex, center, center);
+            & span {
+                font-family: $font-montserrat;
+                font-style: $normal-style;
+                font-weight: $bold-weight;
+                font-size: 22px;
+                line-height: 27px;
+                text-align: center;
+                color: $white-color;
+                position: absolute;
+            }
+        }
+        &--games {
+            width: 300px;
+            height: 310px;
+            position: relative;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            @include flexbox(flex, center, center);
+            & span {
+                font-family: $font-montserrat;
+                font-style: $normal-style;
+                font-weight: $bold-weight;
+                font-size: 22px;
+                line-height: 27px;
+                text-align: center;
+                color: $white-color;
+                position: absolute;
+            }
+        }
+        &--culture {
+            width: 620px;
+            height: 310px;
+            position: relative;
+            margin-bottom: 20px;
+            @include flexbox(flex, center, center);
+            & span {
+                font-family: $font-montserrat;
+                font-style: $normal-style;
+                font-weight: $bold-weight;
+                font-size: 22px;
+                line-height: 27px;
+                text-align: center;
+                color: $white-color;
+                position: absolute;
+            }
+        }
+        &--enjomet {
+            width: 620px;
+            height: 310px;
+            position: relative;
+            margin-right: 20px;
+            @include flexbox(flex, center, center);
+            & span {
+                font-family: $font-montserrat;
+                font-style: $normal-style;
+                font-weight: $bold-weight;
+                font-size: 22px;
+                line-height: 27px;
+                text-align: center;
+                color: $white-color;
+                position: absolute;
+            }
+        }
+        &--trevelling {
+            width: 300px;
+            height: 310px;
+            position: relative;
+            @include flexbox(flex, center, center);
+            & span {
+                font-family: $font-montserrat;
+                font-style: $normal-style;
+                font-weight: $bold-weight;
+                font-size: 22px;
+                line-height: 27px;
+                text-align: center;
+                color: $white-color;
+                position: absolute;
+            }
+        }
+    }
+}
+
+.section4 {
+    @include flexbox(flex, center, center, column);
+    &__title {
+        @include flexbox(flex, center, center, column);
+        & h2 {
+            font-family: $font-montserrat;
+            font-style: $normal-style;
+            font-weight: $bold-weight;
+            font-size: 26px;
+            line-height: 32px;
+            text-align: center;
+            color: $black-color;
+            margin-top: 90px;
+            margin-bottom: 45px;
+        }
+        & span {
+            font-family: $font-roboto;
+            font-style: $normal-style;
+            font-weight: $light-weight;
+            font-size: 18px;
+            line-height: 14px;
+            text-align: center;
+            color: $xz-xz-color;
+        }
+    }
+    &__search-partners {
+        margin-top: 25px;
+        margin-bottom: 100px;
+    }
+    &__input-search {
+        width: 299px;
+        height: 40px;
+        background: $white-color;
+        border: 1px solid $searh__border-color;
+        box-sizing: border-box;
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.073313);
+        border-radius: 3px;
+        outline: none;
+    }
+    &__buttom-search {
+        width: 172.12px;
+        height: 40px;
+        border: none;
+        background: $button-color;
+        border-radius: 40px;
+        font-family: $font-montserrat;
+        font-style: $normal-style;
+        font-weight: $bold-weight;
+        font-size: 14px;
+        line-height: 17px;
+        color: $white-color;
+        outline: none;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-device-width: 980px) and (min-device-width: $breakpoint-tablet) {
+    .conteiner {
+        width: 100%;
+        margin: 0px auto;
+        @include flexbox(flex, center, center, column);
+    }
+    .section1 {
+        width: 748px;
+        margin: 0px auto;
+        &__title {
+            font-size: 22px;
+            line-height: 27px;
+            margin: 95px auto 35px auto;
+        }
+        &__content--left {
+            width: 236px;
+            height: 400px;
+            & img {
+                width: 236px;
+                height: 400px;
+            }
+            & span {
+                margin: 210px 0px 0px 25px;
+            }
+            & h3 {
+                line-height: 26px;
+                margin: 240px 20px 0px 20px;
+            }
+            & p {
+                margin: 310px 20px 0px 20px;
+            }
+        }
+        &__content--center {
+            width: 236px;
+            height: 400px;
+            & img {
+                width: 236px;
+                height: 400px;
+            }
+            & span {
+                margin: 260px 0px 0px 25px;
+            }
+            & h3 {
+                line-height: 26px;
+                margin: 290px 20px 0px 20px;
+            }
+            & p {
+                margin: 325px 20px 0px 20px;
+            }
+        }
+        &__content--right {
+            width: 236px;
+            height: 400px;
+            & img {
+                width: 236px;
+                height: 400px;
+            }
+            & span {
+                margin: 210px 0px 0px 25px;
+            }
+            & h3 {
+                line-height: 26px;
+                margin: 240px 20px 0px 20px;
+            }
+            & p {
+                margin: 310px 20px 0px 20px;
+            }
+        }
+    }
+    .section2 {
+        width: 492px;
+        margin: 0px auto;
+        &__title {
+            font-size: 22px;
+            line-height: 27px;
+            margin: 95px auto 35px auto;
+        }
+        &__partner {
+            display: flex;
+            flex-wrap: wrap;
+            &--partner1 {
+                width: 236px;
+            }
+            &--partner2 {
+                width: 236px;
+            }
+            &--partner3 {
+                width: 236px;
+            }
+            &--partner4 {
+                width: 236px;
+            }
+        }
+    }
+    .section3 {
+        width: 748px;
+        margin: 0px auto;
+        &__title {
+            font-size: 22px;
+            line-height: 27px;
+            margin: 95px auto 35px auto;
+        }
+        &__image--sports {
+            width: 236px;
+            & img {
+                width: 236px;
+                height: 310px;
+            }
+        }
+        &__image--wellness {
+            width: 236px;
+            & img {
+                width: 236px;
+                height: 310px;
+            }
+        }
+        &__image--extreme {
+            width: 236px;
+            & img {
+                width: 236px;
+                height: 310px;
+            }
+        }
+        &__image--games {
+            width: 236px;
+            & img {
+                width: 236px;
+                height: 310px;
+            }
+        }
+        &__image--culture {
+            width: 492px;
+            & img {
+                width: 492px;
+                height: 310px;
+            }
+        }
+        &__image--enjomet {
+            width: 492px;
+            & img {
+                width: 492px;
+                height: 310px;
+            }
+        }
+        &__image--trevelling {
+            width: 236px;
+            & img {
+                width: 236px;
+                height: 310px;
+            }
+        }
+    }
+    .section4 {
+        &__title {
+            font-size: 22px;
+            line-height: 27px;
+        }
+    }
+}
+
+@media screen and (max-device-width: $breakpoint-tablet) and (min-device-width: $breakpoint-phones) {
+    .conteiner {
+        width: 100%;
+        margin: 0px auto;
+        @include flexbox(flex, center, center, column);
+    }
+    .section1 {
+        width: 100%;
+        margin: 0px auto;
+        &__title {
+            margin: 35px auto 15px auto;
+        }
+        &__content {
+            @include flexbox(flex, center, center, column);
+            &--left {
+                width: 300px;
+                height: 240px;
+                margin-bottom: 10px;
+                & img {
+                    width: 300px;
+                    height: 240px;
+                }
+                & span {
+                    margin: 67px 0px 0px 18px;
+                }
+                & h3 {
+                    font-size: 24px;
+                    line-height: 14px;
+                    margin: 100px 0px 10px 20px;
+                }
+                & p {
+                    margin: 165px 30px 15px 20px;
+                }
+            }
+            &--center {
+                width: 300px;
+                height: 240px;
+                margin-bottom: 10px;
+                & img {
+                    width: 300px;
+                    height: 240px;
+                }
+                & span {
+                    margin: 97px 0px 0px 18px;
+                }
+                & h3 {
+                    font-size: 24px;
+                    line-height: 14px;
+                    margin: 130px 0px 10px 20px;
+                }
+                & p {
+                    margin: 165px 30px 15px 20px;
+                }
+            }
+            &--right {
+                width: 300px;
+                height: 240px;
+                & img {
+                    width: 300px;
+                    height: 240px;
+                }
+            }
+            & span {
+                margin: 67px 0px 0px 18px;
+            }
+            & h3 {
+                font-size: 24px;
+                line-height: 14px;
+                margin: 100px 0px 10px 20px;
+            }
+            & p {
+                margin: 165px 30px 15px 20px;
+            }
+        }
+    }
+    .section2 {
+        width: 300px;
+        &__title {
+            @include flexbox(flex, center, center);
+            margin: 35px 0px 14px 0px;
+        }
+        &__partner {
+            @include flexbox(flex, center, center, column);
+            &--partner1 {
+                width: 236px;
+                height: 205px;
+            }
+            &--partner2 {
+                width: 236px;
+                height: 205px;
+            }
+            &--partner3 {
+                width: 236px;
+                height: 205px;
+            }
+            &--partner4 {
+                width: 236px;
+                height: 205px;
+            }
+        }
+        &__see-all {
+            margin: 0 auto;
+            &--partners {
+                width: 280px;
+                height: 40px;
+            }
+        }
+    }
+    .section3 {
+        width: 300px;
+        margin: 0 auto;
+        &__title {
+            @include flexbox(flex, center, center, column);
+        }
+        &__image--sports {
+            width: 300px;
+            height: 120px;
+            margin: 0px auto 10px auto;
+            background-image: url(../../image/Sport.jpg);
+            & img {
+                display: none;
+            }
+        }
+        &__image--wellness {
+            width: 300px;
+            height: 120px;
+            margin: 0px auto 10px auto;
+            background-image: url(../../image/erere.jpg);
+            & img {
+                display: none;
+            }
+        }
+        &__image--extreme {
+            width: 300px;
+            height: 120px;
+            margin: 0px auto 10px auto;
+            background-image: url(../../image/ex.jpg);
+            & img {
+                display: none;
+            }
+        }
+        &__image--games {
+            width: 300px;
+            height: 120px;
+            margin: 0px auto 10px auto;
+            background-image: url(../../image/game.jpg);
+            & img {
+                display: none;
+            }
+        }
+        &__image--culture {
+            width: 300px;
+            height: 18vh;
+            margin: 0px auto 10px auto;
+            background-image: url(../../image/culte.jpg);
+            & img {
+                display: none;
+            }
+        }
+        &__image--enjomet {
+            width: 300px;
+            height: 18vh;
+            margin: 0px auto 10px auto;
+            background-image: url(../../image/erere.jpg);
+            & img {
+                display: none;
+            }
+        }
+        &__image--trevelling {
+            width: 300px;
+            height: 18vh;
+            margin: 0px auto 10px auto;
+            background-image: url(../../image/trevel.jpg);
+            & img {
+                display: none;
+            }
+        }
+    }
+    .section4 {
+        width: 100%;
+        &__title {
+            & h2 {
+                margin: 35px auto 10px auto;
+            }
+        }
+        &__search-partners {
+            @include flexbox(flex, center, center, column);
+            margin-bottom: 40px;
+        }
+        &__buttom-search {
+            width: 280px;
+            height: 40px;
+            margin-top: 10px;
+        }
+    }
+}
