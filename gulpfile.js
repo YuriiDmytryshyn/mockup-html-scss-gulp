@@ -6,7 +6,7 @@ const rename = require("gulp-rename");
 const image = require('gulp-image');
 const browserSync = require('browser-sync').create();
 const del = require('del');
-const fonts = require("fonts");
+const fontmin = require('gulp-fontmin');
 
 const paths = {
     styles: {
@@ -22,7 +22,7 @@ const paths = {
         dest: 'dist/image'
     },
     fonts: {
-        src: 'src/fonts/*.*',
+        src: 'src/fonts/**/*.*',
         dest: 'dist/fonts'
     }
 };
@@ -45,8 +45,8 @@ function browserReload(done) {
 
 function buildFonts() {
     return gulp.src(paths.fonts.src)
+        .pipe(fontmin())
         .pipe(gulp.dest(paths.fonts.dest))
-        .pipe(browserSync.stream())
 };
 
 function buildCSS() {
@@ -73,7 +73,6 @@ function buildImages() {
 };
 
 function watch() {
-    gulp.watch(paths.fonts.src, buildFonts);
     gulp.watch(paths.styles.src, buildCSS);
     gulp.watch(paths.html.src, buildHTML);
     gulp.watch(paths.images.src, buildImages);
@@ -84,7 +83,7 @@ function clear() {
     return del(['dist']);
 };
 
-const build = gulp.series(clear, gulp.parallel(buildCSS, buildFonts, buildHTML, buildImages));
+const build = gulp.series(clear, gulp.parallel(buildCSS, buildHTML, buildImages, buildFonts));
 
 gulp.task('build', build);
 
